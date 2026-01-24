@@ -19,7 +19,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="px-6 pb-10 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} Kim Dohyun. All rights reserved.
+        © {new Date().getFullYear()} 조현우. All rights reserved.
       </footer>
     </div>
   );

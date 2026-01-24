@@ -39,7 +39,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800/80 dark:bg-slate-950/80">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <a href="#hero" className="text-lg font-semibold">
-          도현 포트폴리오
+          현우 포트폴리오
         </a>
         <nav className="hidden items-center gap-6 text-sm md:flex">
           {navItems.map((item) => (

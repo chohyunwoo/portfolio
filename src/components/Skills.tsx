@@ -1,46 +1,128 @@
 import { useMemo, useState } from "react";
-import { skillTabs } from "../data/content";
 
+/* =========================
+   Skill Data (tabs)
+========================= */
+const skillTabs = [
+  {
+    id: "backend",
+    label: "Backend",
+    items: [
+      { name: "Java", level: "Advanced" },
+      { name: "Spring Boot", level: "Advanced" },
+      { name: "Spring Data JPA", level: "Advanced" },
+      { name: "Spring Security", level: "Intermediate" },
+      { name: "JWT", level: "Intermediate" }
+    ]
+  },
+  {
+    id: "database",
+    label: "Database",
+    items: [
+      { name: "MySQL", level: "Intermediate" },
+      { name: "PostgreSQL", level: "Intermediate" }
+    ]
+  },
+  {
+    id: "devops",
+    label: "DevOps / Cloud",
+    items: [
+      { name: "Docker", level: "Intermediate" },
+      { name: "AWS", level: "Intermediate" },
+      { name: "NKS", level: "Basic" }
+    ]
+  },
+  {
+    id: "tools",
+    label: "Tools",
+    items: [
+      { name: "Git", level: "Advanced" },
+      { name: "GitHub", level: "Advanced" },
+      { name: "Postman", level: "Intermediate" },
+      { name: "IntelliJ IDEA", level: "Advanced" },
+      { name: "Slack", level: "Intermediate" },
+      { name: "Discord", level: "Intermediate" }
+    ]
+  }
+];
+
+/* =========================
+   Icons
+========================= */
 const iconMap: Record<string, string> = {
   Java: "M4 7h16v3H4zM4 14h10v3H4z",
-  "Spring Boot": "M12 3l8 4v6c0 5-4 8-8 12-4-4-8-7-8-12V7l8-4z",
-  "JPA/Hibernate": "M5 5h14v4H5zM5 13h14v6H5z",
-  "Spring Security": "M12 3l7 4v5c0 4.4-3 7.7-7 11-4-3.3-7-6.6-7-11V7l7-4z",
-  Kotlin: "M5 4h4v6l6-6h5l-7 7 7 9h-5l-6-8v8H5z",
-  gRPC: "M4 7h16v2H4zm0 6h16v2H4z",
-  React: "M12 4c2.8 0 5 3.6 5 8s-2.2 8-5 8-5-3.6-5-8 2.2-8 5-8z",
-  TypeScript: "M5 5h14v14H5z",
-  Vite: "M12 4l6 4-6 12-6-12z",
-  "Tailwind CSS": "M4 12c2-4 6-4 8 0 2 4 6 4 8 0",
-  PostgreSQL: "M12 4c4 0 7 2 7 4v8c0 2-3 4-7 4s-7-2-7-4V8c0-2 3-4 7-4z",
-  Redis: "M5 7l7-3 7 3-7 3-7-3zm0 5l7 3 7-3-7-3-7 3zm0 5l7 3 7-3-7-3-7 3z",
-  Docker: "M4 12h5v4H4zm6-5h4v4h-4zm0 5h4v4h-4zm5 0h4v4h-4z",
-  AWS: "M6 8h12v8H6z",
-  "GitHub Actions": "M12 4l6 4-6 4-6-4 6-4zm-6 8l6 4 6-4",
-  Grafana: "M12 4c4 2 6 6 4 10s-6 6-10 4-6-6-4-10 6-6 10-4z"
+  "Spring Boot":
+    "M12 3l8 4v6c0 5-4 8-8 12-4-4-8-7-8-12V7l8-4z",
+  "Spring Data JPA":
+    "M5 5h14v4H5zM5 13h14v6H5z",
+  "Spring Security":
+    "M12 3l7 4v5c0 4.4-3 7.7-7 11-4-3.3-7-6.6-7-11V7l7-4z",
+  JWT:
+    "M12 4l8 6-8 10-8-10 8-6z",
+  MySQL:
+    "M12 4c4 0 7 2 7 4v8c0 2-3 4-7 4s-7-2-7-4V8c0-2 3-4 7-4z",
+  PostgreSQL:
+    "M12 3c4.5 0 8 2.2 8 5v8c0 2.8-3.5 5-8 5s-8-2.2-8-5V8c0-2.8 3.5-5 8-5z",
+  Git:
+    "M12 4l6 6-6 6-6-6 6-6zm-2 6a2 2 0 104 0 2 2 0 00-4 0z",
+  GitHub:
+    "M12 2a10 10 0 00-3 19c.5.1.7-.2.7-.5v-1.7c-3 .7-3.7-1.4-3.7-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 2.2 2.4 1.6-.1-.7.4-1.2.7-1.5-2.4-.3-5-1.2-5-5.3 0-1.2.4-2.1 1-2.9-.1-.2-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 015 0c2-.7 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7.6.8 1 1.7 1 2.9 0 4.1-2.6 5-5 5.3.4.3.8 1 .8 2v3c0 .3.2.6.7.5A10 10 0 0012 2z",
+  Docker:
+    "M4 12h5v4H4zm6-5h4v4h-4zm0 5h4v4h-4zm5 0h4v4h-4z",
+  AWS:
+    "M6 8h12v8H6z",
+  NKS:
+    "M12 4l6 4v8l-6 4-6-4V8l6-4z",
+  Postman:
+    "M12 4c4 0 8 4 8 8s-4 8-8 8-8-4-8-8 4-8 8-8z",
+  "IntelliJ IDEA":
+    "M4 4h16v16H4zM8 8h4v8H8z",
+  Slack:
+    "M6 10a2 2 0 110-4h2v4H6zm4 0V6h2a2 2 0 110 4h-2zm0 4a2 2 0 110 4h-2v-4h2zm-4 0v4H6a2 2 0 110-4h2z",
+  Discord:
+    "M6 8l4-2h4l4 2v6l-4 2h-4l-4-2V8z"
 };
 
-const colors = ["text-emerald-300", "text-indigo-300", "text-sky-300", "text-amber-300", "text-violet-300", "text-pink-300"];
+const colors = [
+  "text-emerald-300",
+  "text-indigo-300",
+  "text-sky-300",
+  "text-amber-300",
+  "text-violet-300",
+  "text-pink-300"
+];
 
+/* =========================
+   Component
+========================= */
 export default function Skills() {
   const [activeTab, setActiveTab] = useState(skillTabs[0].id);
-  const activeData = useMemo(() => skillTabs.find((tab) => tab.id === activeTab) ?? skillTabs[0], [activeTab]);
+
+  const activeData = useMemo(
+    () => skillTabs.find((tab) => tab.id === activeTab) ?? skillTabs[0],
+    [activeTab]
+  );
 
   return (
     <section id="skills" className="px-6 py-20">
       <div className="mx-auto w-full max-w-6xl">
+        {/* Header */}
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600">Skills</p>
-            <h2 className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">기술 스택</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600">
+              Skills
+            </p>
+            <h2 className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">
+              기술 스택
+            </h2>
           </div>
-          <p className="max-w-xl text-sm text-slate-600 dark:text-slate-300">{activeData.summary}</p>
         </div>
+
+        {/* Tabs */}
         <div className="mt-8 flex flex-wrap gap-3">
           {skillTabs.map((tab) => (
             <button
               key={tab.id}
-              type="button"
               onClick={() => setActiveTab(tab.id)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
                 activeTab === tab.id
@@ -52,21 +134,31 @@ export default function Skills() {
             </button>
           ))}
         </div>
+
+        {/* Cards */}
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {activeData.items.map((item, index) => (
             <div
               key={item.name}
               className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-primary-500 dark:border-slate-800 dark:bg-slate-950"
             >
-              <div className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 dark:bg-slate-900 ${colors[index % colors.length]}`}>
-                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-current">
+              <div
+                className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 dark:bg-slate-900 ${
+                  colors[index % colors.length]
+                }`}
+              >
+                <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
                   <path d={iconMap[item.name] ?? "M4 6h16v12H4z"} />
                 </svg>
               </div>
+
               <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">{item.name}</p>
-                <p className="mt-1 text-xs font-semibold text-primary-600">{item.level}</p>
-                <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">{item.detail}</p>
+                <p className="text-sm font-semibold text-slate-900 dark:text-white">
+                  {item.name}
+                </p>
+                <p className="mt-1 text-xs font-semibold text-primary-600">
+                  {item.level}
+                </p>
               </div>
             </div>
           ))}
