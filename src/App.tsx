@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Education from "./components/Education";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -14,10 +15,11 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Education />
         <Contact />
       </main>
       <footer className="px-6 pb-10 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} Your Name. All rights reserved.
+        © {new Date().getFullYear()} Kim Dohyun. All rights reserved.
       </footer>
     </div>
   );

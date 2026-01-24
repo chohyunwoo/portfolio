@@ -1,33 +1,55 @@
+const techGroups = [
+  {
+    title: "Server",
+    items: ["Java", "Spring Boot", "Spring Security", "JPA", "Batch"]
+  },
+  {
+    title: "Database",
+    items: ["PostgreSQL", "Redis", "MongoDB", "Query Tuning"]
+  },
+  {
+    title: "Architecture",
+    items: ["MSA", "Event-driven", "Clean Architecture", "DDD"]
+  },
+  {
+    title: "DevOps",
+    items: ["AWS", "Docker", "GitHub Actions", "Monitoring"]
+  }
+];
+
 export default function About() {
   return (
-    <section id="about" className="bg-slate-100 px-6 py-20 dark:bg-slate-900/60">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[1.2fr_1fr]">
+    <section id="about" className="bg-slate-950 px-6 py-20 text-slate-100">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[1.1fr_1fr]">
         <div>
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white">About Me</h2>
-          <p className="mt-6 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-            사용자 행동 데이터를 바탕으로 문제를 정의하고, 직관적인 화면 흐름을 설계하는 과정을 즐깁니다. 다양한 직무와 협업하며
-            요구사항을 빠르게 프로토타입으로 구현하고, 개선 사항을 반복적으로 반영해 온 경험이 있습니다.
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500">About Me</p>
+          <h2 className="mt-4 text-3xl font-bold sm:text-4xl">백엔드 서버 개발자 김도현</h2>
+          <p className="mt-6 text-base leading-relaxed text-slate-300">
+            Spring Boot 기반의 REST API를 설계하고 안정성과 확장성을 우선으로 구현합니다. 트래픽 변동과 장애 상황에서도 서비스가
+            지속될 수 있도록 아키텍처와 배포 전략을 함께 설계합니다.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-            최근에는 접근성, 성능 최적화, 디자인 시스템 구축에 집중하고 있으며, 서비스가 성장하는 과정을 함께 만들어가고 싶습니다.
+          <p className="mt-4 text-base leading-relaxed text-slate-300">
+            성능 모니터링, 데이터 정합성, 협업을 위한 API 문서화까지 모두 책임지는 백엔드 개발자로 성장하고 있으며, 제품 목표에 맞는
+            기술 선택과 개선을 주도합니다.
           </p>
         </div>
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 text-sm text-slate-600 shadow-sm dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300">
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Quick Facts</h3>
-          <ul className="mt-4 space-y-3">
-            <li className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-primary-600"></span>
-              <span>서울 기반 프론트엔드 개발자</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-primary-600"></span>
-              <span>디자인 시스템과 컴포넌트 문서화 경험</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-primary-600"></span>
-              <span>협업 도구: Jira, Notion, Figma</span>
-            </li>
-          </ul>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {techGroups.map((group) => (
+            <div
+              key={group.title}
+              className="rounded-2xl border border-slate-800/80 bg-slate-900/60 p-5 text-sm text-slate-300 shadow-lg shadow-slate-950/40 transition hover:-translate-y-1 hover:border-primary-500/60"
+            >
+              <h3 className="text-base font-semibold text-white">{group.title}</h3>
+              <ul className="mt-3 space-y-2">
+                {group.items.map((item) => (
+                  <li key={item} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary-500" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
