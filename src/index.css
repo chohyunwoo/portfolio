@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", "Inter", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+}
+
+::selection {
+  background-color: rgba(79, 70, 229, 0.2);
+}
