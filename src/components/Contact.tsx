@@ -25,12 +25,19 @@ export default function Contact() {
             Contact
           </p>
           <h2 className="mt-3 text-3xl font-bold text-slate-900 dark:text-white">
-            함께 성장하고 싶습니다
+            배움을 멈추지 않는 백엔드 개발자입니다
           </h2>
-          <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">
-            새로운 기회와 협업에 항상 열려있습니다. 언제든 편하게 연락주세요!
-          </p>
+       <p>
+              새로운 기술을 빠르게 학습하고,
+                </p>
 
+<p>
+              실제 서비스에 적용해보는 과정에서 가장 큰 성장을 느낍니다.
+                </p>
+
+                <p>
+               함께 고민하고 더 나은 방향을 찾아가는 팀에 기여하고 싶습니다.
+                </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {contactDetails.map((detail) => (
               <div
@@ -72,7 +79,7 @@ export default function Contact() {
             </p>
 
             <h3 className="mt-3 text-2xl font-semibold">
-              새로운 도전과 학습에 열정적인 백엔드 개발자입니다.
+              성장 과정에 있는 백엔드 개발자입니다
             </h3>
 
             {/* ✨ 개선된 문구 영역 */}
@@ -80,25 +87,24 @@ export default function Contact() {
               <div className="flex items-start gap-3">
                 <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary-500" />
                 <p>
-                  
-                 복잡한 요구사항을 구조적으로 분석하고 해결하는 과정을
-                  즐깁니다.
+                복잡한 요구사항을 기능 단위로 분해하고,
+      서버 구조 관점에서 해결책을 설계하는 과정을 중요하게 생각합니다.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary-500" />
                 <p>
-                  새로운 기술을 빠르게 학습하고 실제 프로젝트에
-                  적용합니다.
+               새로운 기술을 빠르게 학습하고,
+      Spring Boot 기반 프로젝트에 직접 적용하며 이해도를 높입니다.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary-500" />
                 <p>
-                 혼자보다 팀의 성과를 우선하며 더 나은 서비스를
-                  만들어갑니다.
+                 개인의 완성도보다 팀의 목표를 우선하며,
+      협업을 통해 더 안정적인 서비스를 만드는 것을 지향합니다.
                 </p>
               </div>
             </div>
