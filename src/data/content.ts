@@ -24,7 +24,7 @@ export const projects = [
     isMain: false,
     overview: "물건과 물건을 교환하는 서비스",
     role: "백엔드 & 프론트 ",
-    contribution: "Codex를 사용한 BE&FE 기능 및 UI 개발",
+    contribution: "Codex를 사용한 BE&FE 기능 및 UI 개발 & 개발중인 프로젝트입니다.",
     tags: ["Java 21","Spring Boot","Spring Security","Spring Data JPA","OAuth 2.0","PostgreSQL","Redis","Next.js","React", "TypeScript","Axios", "Zustand","Tailwind CSS"],
     link: "https://github.com/BarterExchange"
   }
