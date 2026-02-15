@@ -20,13 +20,27 @@ export const projects = [
     link: "https://github.com/CarsCommunity"
   },
   {
-    title: "BarterExchange",
+     title: "Decision Risk Analyzer",
     isMain: false,
-    overview: "물건과 물건을 교환하는 서비스",
-    role: "백엔드 & 프론트 ",
-    contribution: "Codex를 사용한 BE&FE 기능 및 UI 개발 & 개발중인 프로젝트입니다.",
-    tags: ["Java 21","Spring Boot","Spring Security","Spring Data JPA","OAuth 2.0","PostgreSQL","Redis","Next.js","React", "TypeScript","Axios", "Zustand","Tailwind CSS"],
-    link: "https://github.com/BarterExchange"
+    overview: "의사결정 상황의 리스크를 정량 점수로 분석해 보여주는 서비스",
+    role: "백엔드 & 프론트엔드",
+    contribution: "Codex를 활용해 BE/FE 기능 구현과 UI 개발을 진행했으며, 현재도 고도화 중인 프로젝트입니다.",
+    tags: [
+      "Java 21",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
+      "OAuth 2.0",
+      "PostgreSQL",
+      "Redis",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Axios",
+      "Zustand",
+      "Tailwind CSS"
+    ],
+    link: "https://github.com/BarterExchange/Decision_Risk_Analyzer"
   }
 ];
 
