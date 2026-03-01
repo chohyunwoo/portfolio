@@ -40,7 +40,7 @@ export const projects = [
       "Zustand",
       "Tailwind CSS"
     ],
-    link: "https://github.com/BarterExchange/Decision_Risk_Analyzer"
+    link: "https://github.com/chohyunwoo/Decision_Risk_Analyzer"
   }
 ];
 
