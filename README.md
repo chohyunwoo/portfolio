@@ -38,3 +38,6 @@ Output directory: dist
 - `src/components/*`: 섹션별 레이아웃/콘텐츠 수정
 - `src/components/Header.tsx`: 다크모드 토글 및 네비게이션 수정
 
+테스트
+테스트 한 줄 추가
+테스트 한 줄 추가
