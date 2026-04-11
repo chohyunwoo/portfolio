@@ -44,3 +44,4 @@ Output directory: dist
 hooks test
 hooks test1
 hooks test2
+hooks test3
