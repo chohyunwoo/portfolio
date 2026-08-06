@@ -38,12 +38,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800/80 dark:bg-slate-950/80">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#hero" className="text-lg font-semibold">
-          현우 포트폴리오
+        <a href="#hero" className="text-lg font-bold text-slate-900 dark:text-white">
+          조현우 포트폴리오
         </a>
-        <nav className="hidden items-center gap-6 text-sm md:flex">
+        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navItems.map((item) => (
-            <a key={item.id} href={`#${item.id}`} className="text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white">
+            <a key={item.id} href={`#${item.id}`} className="text-slate-600 transition hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400">
               {item.label}
             </a>
           ))}
@@ -51,7 +51,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="rounded-full border border-slate-200 px-3 py-1 text-xs font-medium uppercase tracking-wide text-slate-600 transition hover:border-slate-300 hover:text-slate-900 dark:border-slate-700 dark:text-slate-300 dark:hover:border-slate-500 dark:hover:text-white"
+          className="rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-slate-600 transition hover:border-primary-500 hover:text-primary-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-primary-400 dark:hover:text-primary-400"
         >
           {theme === "dark" ? "Light" : "Dark"} mode
         </button>

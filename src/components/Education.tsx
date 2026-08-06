@@ -15,7 +15,7 @@ export default function Education() {
           {educationItems.map((item) => (
             <article
               key={item.title}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 dark:border-slate-800 dark:bg-slate-950"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-500 dark:border-slate-800 dark:bg-slate-950"
             >
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{item.title}</h3>

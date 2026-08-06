@@ -140,10 +140,10 @@ export default function Skills() {
           {activeData.items.map((item, index) => (
             <div
               key={item.name}
-              className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-primary-500 dark:border-slate-800 dark:bg-slate-950"
+              className="flex gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-primary-500 dark:border-slate-800 dark:bg-slate-950"
             >
               <div
-                className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 dark:bg-slate-900 ${
+                className={`flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-900 ${
                   colors[index % colors.length]
                 }`}
               >

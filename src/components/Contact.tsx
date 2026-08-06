@@ -112,7 +112,7 @@ export default function Contact() {
 
           <a
             href="mailto:gusdndlek12@naver.com"
-            className="mt-6 inline-flex items-center justify-center rounded-full bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/30 transition hover:bg-primary-500"
+            className="mt-6 inline-flex items-center justify-center rounded-xl bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition hover:bg-primary-500"
           >
             이메일 보내기
           </a>
