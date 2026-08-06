@@ -2,7 +2,7 @@ const techGroups = [
   {
     title: "Backend Core",
     items: [
-      "Java 21",
+      "Java",
       "Spring Boot",
       "Spring Data JPA",
       "Spring Security",
@@ -30,13 +30,14 @@ const techGroups = [
     items: [
       "Docker",
       "AWS",
-      "NKS"
+      "NKS",
+      "CloudFlare"
     ]
   },
   {
     title: "Collaboration & Tools",
     items: [
-      "Git / GitHub",
+      "Git",
       "Postman",
       "Slack / Discord",
       "IntelliJ IDEA"

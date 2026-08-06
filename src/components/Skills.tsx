@@ -12,10 +12,7 @@ const skillTabs = [
       { name: "Spring Boot", level: "Advanced" },
       { name: "Spring Data JPA", level: "Advanced" },
       { name: "Spring Security", level: "Intermediate" },
-      { name: "JWT", level: "Intermediate" },
-      { name: "WebClient", level: "Intermediate" },
-      { name: "Spring Scheduled", level: "Intermediate" },
-      { name: "Springdoc OpenAPI", level: "Intermediate" }
+      { name: "JWT", level: "Intermediate" }
     ]
   },
   {
@@ -23,8 +20,7 @@ const skillTabs = [
     label: "Database",
     items: [
       { name: "MySQL", level: "Intermediate" },
-      { name: "PostgreSQL", level: "Intermediate" },
-      { name: "Flyway", level: "Intermediate" }
+      { name: "PostgreSQL", level: "Intermediate" }
     ]
   },
   {
@@ -33,7 +29,6 @@ const skillTabs = [
     items: [
       { name: "React", level: "Intermediate" },
       { name: "TypeScript", level: "Intermediate" },
-      { name: "TanStack Query", level: "Basic" },
       { name: "Recharts", level: "Basic" },
       { name: "Kakao Map API", level: "Basic" }
     ]
@@ -44,7 +39,8 @@ const skillTabs = [
     items: [
       { name: "Docker", level: "Intermediate" },
       { name: "AWS", level: "Intermediate" },
-      { name: "NKS", level: "Basic" }
+      { name: "NKS", level: "Basic" },
+      { name: "CloudFlare", level: "Basic" },
     ]
   },
   {
@@ -52,11 +48,9 @@ const skillTabs = [
     label: "Tools",
     items: [
       { name: "Git", level: "Advanced" },
-      { name: "GitHub", level: "Advanced" },
       { name: "Postman", level: "Intermediate" },
       { name: "IntelliJ IDEA", level: "Advanced" },
-      { name: "Slack", level: "Intermediate" },
-      { name: "Discord", level: "Intermediate" }
+      { name: "Slack / Discord", level: "Intermediate" }
     ]
   }
 ];
