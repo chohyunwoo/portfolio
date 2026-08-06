@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary-500">Backend Engineer Portfolio</p>
         <h1 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-          안녕하세요, <span className="text-primary-500">백엔드 개발자 조현우</span>입니다.
+          안녕하세요 <span className="text-primary-500">백엔드 개발자 조현우</span>입니다.
         </h1>
         <p className="mt-6 max-w-2xl text-base text-slate-300 sm:text-lg">
           Spring Boot 기반의 안정적인 REST API와 확장 가능한 아키텍처를 설계합니다. 데이터 흐름과 장애 대응까지 책임지는
