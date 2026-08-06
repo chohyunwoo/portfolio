@@ -19,9 +19,9 @@ export const projects: Project[] = [
   {
     title: "SpotScore",
     isMain: true,
-    overview: "공공데이터 기반 창업 입지 추천 대시보드",
+    overview: "공공데이터 기반 창업 입지 추천 대시보드 — 서로 다른 행정구역 코드 체계 문제를 진단해 지역 매핑 성공률 98% 확보",
     role: "기획-설계-구현 (1인)",
-    contribution: "데이터 수집(SGIS·상권정보), 배치, 가중치 스코어링, REST API, 대시보드 전체 단독 구현",
+    contribution: "SGIS·상권정보 코드 불일치 원인 규명 및 25개 자치구 전수 재매핑(매핑 성공률 40%→98%), 좌표계 변환 오류 해결, AHP 기반 가중치 설계, 데이터 수집·배치·REST API·대시보드 전체 단독 구현",
     tags: ["Java", "Spring Boot", "Spring Data JPA", "WebClient", "PostgreSQL", "Flyway", "Spring Scheduled", "Springdoc OpenAPI", "React", "TypeScript", "Kakao Map API", "Recharts", "TanStack Query"],
     link: "https://github.com/chohyunwoo/SpotScore"
   },

@@ -8,7 +8,7 @@ export default function Projects() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600">Projects</p>
           <h2 className="mt-2 text-3xl font-bold text-slate-900 dark:text-white">백엔드 프로젝트</h2>
           <p className="mt-4 max-w-2xl text-sm text-slate-600 dark:text-slate-300">
-            실제 운영 환경에서 경험한 문제와 해결 방법을 중심으로 정리했습니다. 안정성과 확장성을 최우선으로 고려했습니다.
+            백엔드 API·배치 설계를 중심으로, 필요한 경우 프론트엔드까지 직접 구현했습니다. 실제 데이터를 다루며 마주친 문제와 해결 과정을 정리했습니다.
           </p>
         </div>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">

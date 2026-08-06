@@ -6,7 +6,10 @@ const techGroups = [
       "Spring Boot",
       "Spring Data JPA",
       "Spring Security",
-      "JWT"
+      "JWT",
+      "WebClient",
+      "Spring Scheduled",
+      "Springdoc OpenAPI"
     ]
   },
   {
@@ -14,25 +17,34 @@ const techGroups = [
     items: [
       "MySQL",
       "PostgreSQL",
-      
+      "Flyway"
+    ]
+  },
+  {
+    title: "Frontend",
+    items: [
+      "React",
+      "TypeScript",
+      "TanStack Query",
+      "Recharts",
+      "Kakao Map API"
     ]
   },
   {
     title: "DevOps / Cloud",
     items: [
-      "Docker ",
+      "Docker",
       "AWS",
-      "NKS ",
-   
+      "NKS"
     ]
   },
   {
     title: "Collaboration & Tools",
     items: [
-      "Git / GitHub ",
+      "Git / GitHub",
       "Postman",
-      "Slack / Discord ",
-      "IntelliJ IDEA "
+      "Slack / Discord",
+      "IntelliJ IDEA"
     ]
   }
 ];
@@ -59,7 +71,7 @@ export default function About() {
           </p>
 
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-            Spring Framework 기반 백엔드 개발, GitActions를 활용한 CI/CD 자동화, 그리고 AWS와 Oracle Cloud 기반 서버 구축에 관심이 많으며, 지속적인 학습을 통해 새로운 기술에 도전하고 있습니다.
+            Spring Framework 기반 백엔드 개발, GitHub Actions를 활용한 CI/CD 자동화, 그리고 AWS 기반 서버 구축 경험이 있으며, 지속적인 학습을 통해 새로운 기술에 도전하고 있습니다.
           </p>
         </div>
 

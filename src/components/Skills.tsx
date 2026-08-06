@@ -12,7 +12,10 @@ const skillTabs = [
       { name: "Spring Boot", level: "Advanced" },
       { name: "Spring Data JPA", level: "Advanced" },
       { name: "Spring Security", level: "Intermediate" },
-      { name: "JWT", level: "Intermediate" }
+      { name: "JWT", level: "Intermediate" },
+      { name: "WebClient", level: "Intermediate" },
+      { name: "Spring Scheduled", level: "Intermediate" },
+      { name: "Springdoc OpenAPI", level: "Intermediate" }
     ]
   },
   {
@@ -20,7 +23,19 @@ const skillTabs = [
     label: "Database",
     items: [
       { name: "MySQL", level: "Intermediate" },
-      { name: "PostgreSQL", level: "Intermediate" }
+      { name: "PostgreSQL", level: "Intermediate" },
+      { name: "Flyway", level: "Intermediate" }
+    ]
+  },
+  {
+    id: "frontend",
+    label: "Frontend",
+    items: [
+      { name: "React", level: "Intermediate" },
+      { name: "TypeScript", level: "Intermediate" },
+      { name: "TanStack Query", level: "Basic" },
+      { name: "Recharts", level: "Basic" },
+      { name: "Kakao Map API", level: "Basic" }
     ]
   },
   {
@@ -80,7 +95,25 @@ const iconMap: Record<string, string> = {
   Slack:
     "M6 10a2 2 0 110-4h2v4H6zm4 0V6h2a2 2 0 110 4h-2zm0 4a2 2 0 110 4h-2v-4h2zm-4 0v4H6a2 2 0 110-4h2z",
   Discord:
-    "M6 8l4-2h4l4 2v6l-4 2h-4l-4-2V8z"
+    "M6 8l4-2h4l4 2v6l-4 2h-4l-4-2V8z",
+  WebClient:
+    "M4 12h16M4 12a8 8 0 018-8 8 8 0 018 8 8 8 0 01-8 8 8 8 0 01-8-8z",
+  Flyway:
+    "M6 4h12v4H6zm0 6h12v10H6z",
+  "Spring Scheduled":
+    "M12 3a9 9 0 100 18 9 9 0 000-18zm0 4v5l4 2",
+  "Springdoc OpenAPI":
+    "M5 4h14v16H5zM8 8h8M8 12h8M8 16h5",
+  React:
+    "M12 9.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM12 3c4 3 6 6 6 9s-2 6-6 9c-4-3-6-6-6-9s2-6 6-9z",
+  TypeScript:
+    "M4 4h16v16H4zM7 8h5M9.5 8v9M14 17c1.5 1 4 1 4-1s-2-1.5-2-3 1-2 2.5-1",
+  "TanStack Query":
+    "M11 4a7 7 0 100 14 7 7 0 000-14zm5 12l4 4",
+  Recharts:
+    "M4 20V10h3v10H4zm7 0V4h3v16h-3zm7 0v-7h3v7h-3z",
+  "Kakao Map API":
+    "M12 21s7-6.6 7-12a7 7 0 10-14 0c0 5.4 7 12 7 12zm0-9a3 3 0 100-6 3 3 0 000 6z"
 };
 
 const colors = [
