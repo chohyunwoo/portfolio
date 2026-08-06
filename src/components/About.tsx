@@ -6,18 +6,14 @@ const techGroups = [
       "Spring Boot",
       "Spring Data JPA",
       "Spring Security",
-      "JWT",
-      "WebClient",
-      "Spring Scheduled",
-      "Springdoc OpenAPI"
+      "JWT"
     ]
   },
   {
     title: "Database",
     items: [
       "MySQL",
-      "PostgreSQL",
-      "Flyway"
+      "PostgreSQL"
     ]
   },
   {
@@ -25,7 +21,6 @@ const techGroups = [
     items: [
       "React",
       "TypeScript",
-      "TanStack Query",
       "Recharts",
       "Kakao Map API"
     ]
@@ -63,15 +58,15 @@ export default function About() {
           </h2>
 
           <p className="mt-6 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-            안녕하세요! 저는 열정적인 참여를 바탕으로 실무에 투입되고 싶은 백엔드 신입 개발자입니다.
+            안녕하세요! 문제가 생기면 원인을 끝까지 추적해서 데이터로 검증하는 걸 좋아하는 백엔드 신입 개발자입니다.
           </p>
 
            <p className="mt-6 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-           사용자 중심의 서비스를 설계하고 데이터를 안정적으로 관리하는 백엔드 시스템 구축에 관심이 많은 개발자입니다.
+           사용자 중심의 서비스를 설계하고 데이터를 안정적으로 관리하는 백엔드 시스템 구축에 관심이 많습니다.
           </p>
 
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-            Spring Framework 기반 백엔드 개발, GitHub Actions를 활용한 CI/CD 자동화, 그리고 AWS 기반 서버 구축 경험이 있으며, 지속적인 학습을 통해 새로운 기술에 도전하고 있습니다.
+            Spring Framework 기반 백엔드 개발, GitHub Actions를 활용한 CI/CD 자동화, AWS 기반 서버 구축 경험이 있으며, SpotScore 프로젝트에서는 서로 다른 두 공공데이터 API의 행정구역 코드 체계 불일치를 직접 진단하고 해결한 경험이 있습니다.
           </p>
         </div>
 
