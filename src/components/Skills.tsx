@@ -12,7 +12,9 @@ const skillTabs = [
       { name: "Spring Boot", level: "Advanced" },
       { name: "Spring Data JPA", level: "Advanced" },
       { name: "Spring Security", level: "Intermediate" },
-      { name: "JWT", level: "Intermediate" }
+      { name: "JWT", level: "Intermediate" },
+      { name: "NestJS", level: "Intermediate" },
+      { name: "TypeORM", level: "Intermediate" }
     ]
   },
   {
@@ -20,7 +22,8 @@ const skillTabs = [
     label: "Database",
     items: [
       { name: "MySQL", level: "Intermediate" },
-      { name: "PostgreSQL", level: "Intermediate" }
+      { name: "PostgreSQL", level: "Intermediate" },
+      { name: "Redis", level: "Intermediate" }
     ]
   },
   {
@@ -41,6 +44,8 @@ const skillTabs = [
       { name: "AWS", level: "Intermediate" },
       { name: "NKS", level: "Basic" },
       { name: "CloudFlare", level: "Basic" },
+      { name: "GitHub Actions", level: "Intermediate" },
+      { name: "k6", level: "Basic" },
     ]
   },
   {
@@ -107,7 +112,17 @@ const iconMap: Record<string, string> = {
   Recharts:
     "M4 20V10h3v10H4zm7 0V4h3v16h-3zm7 0v-7h3v7h-3z",
   "Kakao Map API":
-    "M12 21s7-6.6 7-12a7 7 0 10-14 0c0 5.4 7 12 7 12zm0-9a3 3 0 100-6 3 3 0 000 6z"
+    "M12 21s7-6.6 7-12a7 7 0 10-14 0c0 5.4 7 12 7 12zm0-9a3 3 0 100-6 3 3 0 000 6z",
+  NestJS:
+    "M12 3c3 3 5 6 5 9a5 5 0 01-10 0c0-3 2-6 5-9zm0 4v9",
+  TypeORM:
+    "M4 6h16v3H4zm2 5h12v2H6zm0 4h12v2H6zm0 4h8v2H6z",
+  Redis:
+    "M12 4l8 3v3l-8 3-8-3V7zm-8 6l8 3 8-3v3l-8 3-8-3z",
+  "GitHub Actions":
+    "M12 3l7 4v10l-7 4-7-4V7z M12 8v8 M8 10l4-2 4 2",
+  k6:
+    "M4 20l6-16h4l6 16h-4l-1.2-3.5H9.2L8 20z M10 13h4l-2-6z"
 };
 
 const colors = [

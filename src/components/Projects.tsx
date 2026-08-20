@@ -20,9 +20,14 @@ export default function Projects() {
               <div>
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{project.title}</h3>
-                  {project.isMain && (
-                    <span className="rounded-full bg-primary-600/10 px-3 py-1 text-xs font-semibold text-primary-600">Main Project</span>
-                  )}
+                  <div className="flex gap-2">
+                    {project.isMain && (
+                      <span className="rounded-full bg-primary-600/10 px-3 py-1 text-xs font-semibold text-primary-600">Main Project</span>
+                    )}
+                    {project.status && (
+                      <span className="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-600 dark:text-amber-400">{project.status}</span>
+                    )}
+                  </div>
                 </div>
                 <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">{project.overview}</p>
                 <div className="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">

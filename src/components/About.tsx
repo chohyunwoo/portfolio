@@ -6,14 +6,17 @@ const techGroups = [
       "Spring Boot",
       "Spring Data JPA",
       "Spring Security",
-      "JWT"
+      "JWT",
+      "NestJS",
+      "TypeORM"
     ]
   },
   {
     title: "Database",
     items: [
       "MySQL",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Redis"
     ]
   },
   {
@@ -31,7 +34,9 @@ const techGroups = [
       "Docker",
       "AWS",
       "NKS",
-      "CloudFlare"
+      "CloudFlare",
+      "GitHub Actions",
+      "k6"
     ]
   },
   {
@@ -68,6 +73,10 @@ export default function About() {
 
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
             Spring Framework 기반 백엔드 개발, GitHub Actions를 활용한 CI/CD 자동화, AWS 기반 서버 구축 경험이 있으며, SpotScore 프로젝트에서는 서로 다른 두 공공데이터 API의 행정구역 코드 체계 불일치를 직접 진단하고 해결한 경험이 있습니다.
+          </p>
+
+          <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
+            CommerceCore 프로젝트에서는 브라우저 EventSource의 커스텀 헤더 미지원, TypeORM 컬럼 타입 오인식으로 인한 배포 크래시처럼 증상만으로는 답이 안 보이는 문제를 스펙과 원인까지 추적해 해결했고, 이 경험을 계기로 부팅 자체를 검증하는 e2e CI를 도입했습니다.
           </p>
         </div>
 
