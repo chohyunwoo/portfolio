@@ -30,13 +30,21 @@ export default function Projects() {
                   </div>
                 </div>
                 <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">{project.overview}</p>
-                <div className="mt-4 space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                <div className="mt-4 space-y-3 text-sm text-slate-500 dark:text-slate-400">
                   <p>
                     <span className="font-semibold text-slate-700 dark:text-slate-200">역할:</span> {project.role}
                   </p>
-                  <p>
-                    <span className="font-semibold text-slate-700 dark:text-slate-200">기여:</span> {project.contribution}
-                  </p>
+                  <div>
+                    <span className="font-semibold text-slate-700 dark:text-slate-200">기여:</span>
+                    <ul className="mt-1.5 space-y-1.5 pl-1">
+                      {project.contribution.map((item) => (
+                        <li key={item} className="flex gap-2 leading-relaxed">
+                          <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-slate-400 dark:bg-slate-500" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="mt-6">
