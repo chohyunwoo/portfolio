@@ -18,6 +18,14 @@ export default function Projects() {
               className="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-500 dark:border-slate-800 dark:bg-slate-950"
             >
               <div>
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={`${project.title} 대표 화면`}
+                    loading="lazy"
+                    className="mb-5 aspect-[16/9] w-full rounded-xl border border-slate-200 object-cover object-top dark:border-slate-800"
+                  />
+                )}
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{project.title}</h3>
                   <div className="flex gap-2">

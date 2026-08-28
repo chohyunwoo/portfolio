@@ -2,6 +2,7 @@ interface Project {
   title: string;
   isMain: boolean;
   status?: string;
+  image?: string;
   overview: string;
   role: string;
   contribution: string[];
@@ -23,6 +24,7 @@ export const projects: Project[] = [
   {
     title: "SpotScore",
     isMain: true,
+    image: "/spotscore.png",
     overview: "공공데이터 기반 창업 입지 추천 대시보드 — 점수 자체보다 어떤 지표를 어떤 비중으로 조합했는지 근거를 함께 보여주는 데 집중",
     role: "기획-설계-구현 (1인)",
     contribution: [
@@ -42,6 +44,7 @@ export const projects: Project[] = [
     title: "CommerceCore",
     isMain: false,
     status: "진행 중",
+    image: "/commercecore.png",
     overview: "동시성 제어와 실시간 재고 관리에 집중한 이커머스 백엔드 — 재고 초과판매가 실제로 막히는지 k6로 직접 검증",
     role: "기획-설계-구현 (1인)",
     contribution: [
