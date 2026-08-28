@@ -9,6 +9,7 @@ interface Project {
   link: string;
   liveUrl: string;
   notionUrl: string;
+  swaggerUrl: string;
 }
 
 interface EducationItem {
@@ -34,7 +35,8 @@ export const projects: Project[] = [
     tags: ["Java", "Spring Boot", "Spring Data JPA", "WebClient", "PostgreSQL", "Flyway", "Spring Scheduled", "Springdoc OpenAPI", "React", "TypeScript", "Kakao Map API", "Recharts", "TanStack Query", "Groq API"],
     link: "https://github.com/chohyunwoo/SpotScore",
     liveUrl: "https://spotscore.pages.dev/",
-    notionUrl: "https://app.notion.com/p/3bceaf19306980dab9e2ebebebb45034"
+    notionUrl: "https://app.notion.com/p/3bceaf19306980dab9e2ebebebb45034",
+    swaggerUrl: "https://spotscore-backend.onrender.com/swagger-ui/index.html"
   },
   {
     title: "CommerceCore",
@@ -52,7 +54,8 @@ export const projects: Project[] = [
     tags: ["NestJS", "TypeScript", "TypeORM", "PostgreSQL", "Redis", "SSE", "k6", "TossPayments", "RBAC", "DINOv2 (q8, transformers.js)", "Supabase Storage", "GitHub Actions", "Docker Compose", "React", "Vite"],
     link: "https://github.com/chohyunwoo/CommerceCore",
     liveUrl: "https://commercecore.pages.dev/",
-    notionUrl: "https://app.notion.com/p/3bceaf19306980dab9e2ebebebb45034"
+    notionUrl: "https://app.notion.com/p/3bceaf19306980dab9e2ebebebb45034",
+    swaggerUrl: "https://commerce-core-backend.onrender.com/docs"
   },
 ];
 

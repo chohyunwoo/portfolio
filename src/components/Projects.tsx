@@ -84,6 +84,14 @@ export default function Projects() {
                     >
                       GitHub ↗
                     </a>
+                    <a
+                      href={project.swaggerUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400"
+                    >
+                      API 문서 ↗
+                    </a>
                   </div>
                   <p className="text-xs text-slate-400 dark:text-slate-500">
                     Render 무료 티어 운영 — 첫 접속 시 30초~1분 소요될 수 있습니다
