@@ -6,15 +6,15 @@ const techGroups = [
       "Spring Boot",
       "Spring Data JPA",
       "Spring Security",
-      "JWT",
       "NestJS",
-      "TypeORM"
+      "TypeORM",
+      "Redis 세션",
+      "RBAC"
     ]
   },
   {
     title: "Database",
     items: [
-      "MySQL",
       "PostgreSQL",
       "Redis"
     ]
@@ -32,7 +32,6 @@ const techGroups = [
     title: "DevOps / Cloud",
     items: [
       "Docker",
-      "AWS",
       "NKS",
       "CloudFlare",
       "GitHub Actions",
@@ -72,7 +71,7 @@ export default function About() {
           </p>
 
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
-            Spring Framework 기반 백엔드 개발, GitHub Actions를 활용한 CI/CD 자동화, AWS 기반 서버 구축 경험이 있으며, SpotScore 프로젝트에서는 서로 다른 두 공공데이터 API의 행정구역 코드 체계 불일치를 직접 진단하고 해결한 경험이 있습니다.
+            Spring Framework 기반 백엔드 개발, GitHub Actions를 활용한 CI/CD 자동화 경험이 있으며, SpotScore 프로젝트에서는 서로 다른 두 공공데이터 API의 행정구역 코드 체계 불일치를 직접 진단하고 해결한 경험이 있습니다.
           </p>
 
           <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">

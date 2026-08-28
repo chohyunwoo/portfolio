@@ -12,16 +12,16 @@ const skillTabs = [
       { name: "Spring Boot", level: "Advanced" },
       { name: "Spring Data JPA", level: "Advanced" },
       { name: "Spring Security", level: "Intermediate" },
-      { name: "JWT", level: "Intermediate" },
       { name: "NestJS", level: "Intermediate" },
-      { name: "TypeORM", level: "Intermediate" }
+      { name: "TypeORM", level: "Intermediate" },
+      { name: "Redis 세션", level: "Intermediate" },
+      { name: "RBAC", level: "Intermediate" }
     ]
   },
   {
     id: "database",
     label: "Database",
     items: [
-      { name: "MySQL", level: "Intermediate" },
       { name: "PostgreSQL", level: "Intermediate" },
       { name: "Redis", level: "Intermediate" }
     ]
@@ -41,7 +41,6 @@ const skillTabs = [
     label: "DevOps / Cloud",
     items: [
       { name: "Docker", level: "Intermediate" },
-      { name: "AWS", level: "Intermediate" },
       { name: "NKS", level: "Basic" },
       { name: "CloudFlare", level: "Basic" },
       { name: "GitHub Actions", level: "Intermediate" },
@@ -194,12 +193,9 @@ export default function Skills() {
                 </svg>
               </div>
 
-              <div>
+              <div className="flex items-center">
                 <p className="text-sm font-semibold text-slate-900 dark:text-white">
                   {item.name}
-                </p>
-                <p className="mt-1 text-xs font-semibold text-primary-600">
-                  {item.level}
                 </p>
               </div>
             </div>

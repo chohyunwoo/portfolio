@@ -1,13 +1,32 @@
+// 이메일 하베스터(정적 정규식 스캐너)가 연속된 주소를 수집하지 못하도록
+// 소스에는 사용자/도메인을 분리해 두고 런타임에만 조합한다.
+const emailUser = "gusdndlek12";
+const emailDomain = "naver.com";
+const email = `${emailUser}@${emailDomain}`;
+
 const contactDetails = [
   {
     label: "Email",
-    value: "gusdndlek12@naver.com",
-    href: "mailto:gusdndlek12@naver.com"
+    value: email,
+    href: `mailto:${email}`
   },
   {
     label: "GitHub",
     value: "https://github.com/chohyunwoo",
-    href: "https://github.com/chohyunwoo"
+    href: "https://github.com/chohyunwoo",
+    external: true
+  },
+  {
+    label: "Resume",
+    value: "이력서 (Notion)",
+    href: "https://app.notion.com/p/299eaf19306981f5aaeecfa607a6bda7",
+    external: true
+  },
+  {
+    label: "Blog",
+    value: "블로그 (Tistory)",
+    href: "https://gussdndlek12.tistory.com/",
+    external: true
   },
   {
     label: "Location",
@@ -25,19 +44,8 @@ export default function Contact() {
             Contact
           </p>
           <h2 className="mt-3 text-3xl font-bold text-slate-900 dark:text-white">
-            배움을 멈추지 않는 백엔드 개발자입니다
+            백엔드 개발자 조현우입니다
           </h2>
-       <p>
-              새로운 기술을 빠르게 학습하고,
-                </p>
-
-<p>
-              실제 서비스에 적용해보는 과정에서 가장 큰 성장을 느낍니다.
-                </p>
-
-                <p>
-               함께 고민하고 더 나은 방향을 찾아가는 팀에 기여하고 싶습니다.
-                </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {contactDetails.map((detail) => (
               <div
@@ -51,12 +59,8 @@ export default function Contact() {
                 {detail.href ? (
                   <a
                     href={detail.href}
-                    target={detail.label === "GitHub" ? "_blank" : undefined}
-                    rel={
-                      detail.label === "GitHub"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
+                    target={detail.external ? "_blank" : undefined}
+                    rel={detail.external ? "noopener noreferrer" : undefined}
                     className="mt-2 inline-block text-base font-semibold text-primary-600 hover:underline"
                   >
                     {detail.value}
@@ -78,40 +82,17 @@ export default function Contact() {
               Get in touch
             </p>
 
-            <h3 className="mt-3 text-2xl font-semibold">
-              성장 과정에 있는 백엔드 개발자입니다
-            </h3>
-
-            {/* ✨ 개선된 문구 영역 */}
-            <div className="mt-5 space-y-3 text-sm text-slate-600 dark:text-slate-300">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary-500" />
-                <p>
-                복잡한 요구사항을 기능 단위로 분해하고,
-      서버 구조 관점에서 해결책을 설계하는 과정을 중요하게 생각합니다.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary-500" />
-                <p>
-               새로운 기술을 빠르게 학습하고,
-      Spring Boot 기반 프로젝트에 직접 적용하며 이해도를 높입니다.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary-500" />
-                <p>
-                 개인의 완성도보다 팀의 목표를 우선하며,
-      협업을 통해 더 안정적인 서비스를 만드는 것을 지향합니다.
-                </p>
-              </div>
+            <div className="mt-5 space-y-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+              <p>
+                복잡한 요구사항을 기능 단위로 분해하고, 서버 구조 관점에서 해결책을 설계합니다.
+                추측으로 넘기지 않고 EXPLAIN·k6·실측으로 확인한 뒤 결정하며,
+                그 판단 근거를 문서로 남기는 것을 습관으로 합니다.
+              </p>
             </div>
           </div>
 
           <a
-            href="mailto:gusdndlek12@naver.com"
+            href={`mailto:${email}`}
             className="mt-6 inline-flex items-center justify-center rounded-xl bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition hover:bg-primary-500"
           >
             이메일 보내기

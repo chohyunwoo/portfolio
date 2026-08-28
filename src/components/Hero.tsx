@@ -1,3 +1,8 @@
+// 이메일 하베스터가 연속된 주소를 수집하지 못하도록 런타임에만 조합한다.
+const emailUser = "gusdndlek12";
+const emailDomain = "naver.com";
+const email = `${emailUser}@${emailDomain}`;
+
 const socialLinks = [
   {
     label: "GitHub",
@@ -10,7 +15,7 @@ const socialLinks = [
   },
   {
     label: "Email",
-    href: "mailto:gusdndlek12@naver.com",
+    href: `mailto:${email}`,
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
         <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.01L12 13l8-5.99V7H4zm0 10h16V9l-8 6-8-6v8z" />
@@ -34,8 +39,8 @@ export default function Hero() {
           안녕하세요 <span className="text-primary-600 dark:text-primary-400">백엔드 개발자 조현우</span>입니다.
         </h1>
         <p className="mt-6 max-w-2xl text-base text-slate-600 sm:text-lg dark:text-slate-300">
-          Spring Boot 기반의 안정적인 REST API와 확장 가능한 아키텍처를 설계합니다. 데이터 흐름과 장애 대응까지 책임지는
-          서버 중심 개발자로 성장하고자 합니다.
+          문제의 근본 원인을 데이터로 검증하는 백엔드 개발자입니다. 공공데이터 정합성 진단, 동시성 제어,
+          결제 신뢰성 설계를 실측으로 검증했습니다.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a

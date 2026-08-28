@@ -58,14 +58,37 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-flex items-center text-sm font-semibold text-primary-600 hover:text-primary-500"
-                >
-                  상세 보기 →
-                </a>
+                <div className="mt-5 flex flex-col gap-2">
+                  <a
+                    href={project.notionUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm font-semibold text-primary-600 hover:text-primary-500"
+                  >
+                    상세 문서 보기 →
+                  </a>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400"
+                    >
+                      Live ↗
+                    </a>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-primary-400"
+                    >
+                      GitHub ↗
+                    </a>
+                  </div>
+                  <p className="text-xs text-slate-400 dark:text-slate-500">
+                    Render 무료 티어 운영 — 첫 접속 시 30초~1분 소요될 수 있습니다
+                  </p>
+                </div>
               </div>
             </article>
           ))}
