@@ -4,6 +4,11 @@ const emailUser = "gusdndlek12";
 const emailDomain = "naver.com";
 const email = `${emailUser}@${emailDomain}`;
 
+// 이력서에는 개인정보가 포함되므로 스크래퍼가 번들에서 URL을 통째로 수집하지
+// 못하도록 페이지 ID를 분리해 두고 런타임에만 조합한다. (색인 방지는 rel=nofollow 병행)
+const resumePageId = "299eaf19306981f5aaeecfa607a6bda7";
+const resumeUrl = `https://app.notion.com/p/${resumePageId}`;
+
 const contactDetails = [
   {
     label: "Email",
@@ -19,8 +24,9 @@ const contactDetails = [
   {
     label: "Resume",
     value: "이력서 (Notion)",
-    href: "https://app.notion.com/p/299eaf19306981f5aaeecfa607a6bda7",
-    external: true
+    href: resumeUrl,
+    external: true,
+    nofollow: true
   },
   {
     label: "Blog",
@@ -60,7 +66,13 @@ export default function Contact() {
                   <a
                     href={detail.href}
                     target={detail.external ? "_blank" : undefined}
-                    rel={detail.external ? "noopener noreferrer" : undefined}
+                    rel={
+                      detail.external
+                        ? detail.nofollow
+                          ? "nofollow noopener noreferrer"
+                          : "noopener noreferrer"
+                        : undefined
+                    }
                     className="mt-2 inline-block text-base font-semibold text-primary-600 hover:underline"
                   >
                     {detail.value}
