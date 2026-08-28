@@ -1,4 +1,5 @@
 import About from "./components/About";
+import AiCollaboration from "./components/AiCollaboration";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Header from "./components/Header";
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <AiCollaboration />
         <Education />
         <Contact />
       </main>
