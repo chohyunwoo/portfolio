@@ -16,8 +16,7 @@ interface Project {
 interface EducationItem {
   title: string;
   period: string;
-  description: string;
-  tags: string[];
+  points: string[];
 }
 
 interface Certification {
@@ -70,16 +69,23 @@ export const projects: Project[] = [
 
 export const educationItems: EducationItem[] = [
   {
-    title: "프로그래머스 데브코스: 클라우드 기반 백엔드 엔지니어링",
-    period: "2024.12.18 - 2025.06.04",
-    description: "인프라스트럭쳐 아키텍처 구축",
-    tags: ["Spring Boot", "Clean Architecture", "TDD"]
+    title: "AI Native 커리어 캠프 I",
+    period: "2026.07.22 - 2026.11.17 (진행 중)",
+    points: [
+      "Claude Code CLI로 이슈 작성 → 브랜치 생성 → 구현 → PR 생성까지 개발 전 과정을 실사용하며 워크플로우를 구성",
+      "커밋 메시지·기술 블로그·UI 리뷰를 목적별 스킬로 패키징해 반복 작업 자동화",
+      "개인 프로젝트(SpotScore, CommerceCore)를 직접 서비스로 구현"
+    ]
   },
   {
-    title: "AI Native 커리어 캠프",
-    period: "2026.07.22 - 2026.11.17",
-    description: "현직자 멘토링 기반 포트폴리오 설계부터 매월 프로젝트 완성까지, AI 활용 개발 역량을 실전 프로젝트로 검증하는 커리어 캠프",
-    tags: ["AI-Native Development", "Prompt Engineering", "Portfolio Project", "Mentoring"]
+    title: "프로그래머스 데브코스: 클라우드 기반 백엔드 엔지니어링 I",
+    period: "2024.12.18 - 2025.06.04",
+    points: [
+      "Java/Spring Boot 기반 백엔드 개발과 클라우드 배포 과정을 이수",
+      "Docker, GitHub Actions(CI/CD), PostgreSQL 기반 데이터 모델링을 실습",
+      "Git 브랜치 전략을 적용해 기능 단위로 작업을 분리하는 협업 워크플로우 실습",
+      "AWS 환경 배포 실습"
+    ]
   }
 ];
 
