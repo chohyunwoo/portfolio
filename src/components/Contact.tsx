@@ -100,9 +100,11 @@ export default function Contact() {
 
             <div className="mt-5 space-y-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               <p>
-                복잡한 요구사항을 기능 단위로 분해하고, 서버 구조 관점에서 해결책을 설계합니다.
-                추측으로 넘기지 않고 EXPLAIN·k6·실측으로 확인한 뒤 결정하며,
-                그 판단 근거를 문서로 남기는 것을 습관으로 합니다.
+                기획부터 배포까지 혼자 끝낸 서비스 두 개를 URL로 운영하고,
+                반복되는 개발 작업은 직접 도구로 만들어 없애는 백엔드 개발자입니다.
+              </p>
+              <p>
+                바로 합류할 수 있습니다. 함께할 팀을 찾고 계신다면 편하게 연락 주세요.
               </p>
             </div>
           </div>
