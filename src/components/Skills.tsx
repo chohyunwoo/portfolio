@@ -22,6 +22,7 @@ const skillTabs = [
     id: "database",
     label: "Database",
     items: [
+      { name: "MySQL", level: "Intermediate" },
       { name: "PostgreSQL", level: "Intermediate" },
       { name: "Redis", level: "Intermediate" }
     ]

@@ -15,6 +15,7 @@ const techGroups = [
   {
     title: "Database",
     items: [
+      "MySQL",
       "PostgreSQL",
       "Redis"
     ]
