@@ -41,7 +41,6 @@ const skillTabs = [
     label: "DevOps / Cloud",
     items: [
       { name: "Docker", level: "Intermediate" },
-      { name: "NKS", level: "Basic" },
       { name: "CloudFlare", level: "Basic" },
       { name: "GitHub Actions", level: "Intermediate" },
       { name: "k6", level: "Basic" },

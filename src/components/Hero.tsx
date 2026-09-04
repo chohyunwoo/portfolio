@@ -34,13 +34,13 @@ export default function Hero() {
       <div className="absolute -left-32 top-24 h-72 w-72 rounded-full bg-primary-200/50 blur-3xl dark:bg-indigo-600/20" />
       <div className="absolute bottom-10 right-10 h-72 w-72 rounded-full bg-primary-100/60 blur-3xl dark:bg-sky-500/20" />
       <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary-600 dark:text-primary-400">Backend Engineer Portfolio</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary-600 dark:text-primary-400">Developer Portfolio</p>
         <h1 className="mt-6 text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white">
-          안녕하세요 <span className="text-primary-600 dark:text-primary-400">백엔드 개발자 조현우</span>입니다.
+          안녕하세요 <span className="text-primary-600 dark:text-primary-400">기획부터 배포까지 만드는 개발자 조현우</span>입니다.
         </h1>
         <p className="mt-6 max-w-2xl text-base text-slate-600 sm:text-lg dark:text-slate-300">
-          문제의 근본 원인을 데이터로 검증하는 백엔드 개발자입니다. 공공데이터 정합성 진단, 동시성 제어,
-          결제 신뢰성 설계를 실측으로 검증했습니다.
+          문제의 근본 원인을 데이터로 검증하는 개발자입니다. 외부 API를 엮은 데이터 대시보드와
+          이커머스 백엔드를 기획부터 배포까지 혼자 만들었고, 반복되는 작업은 도구로 만들어 없앱니다.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
