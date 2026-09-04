@@ -37,6 +37,10 @@ const contactDetails = [
   {
     label: "Location",
     value: "Seoul, KR"
+  },
+  {
+    label: "입사 가능 시기",
+    value: "즉시 가능"
   }
 ];
 

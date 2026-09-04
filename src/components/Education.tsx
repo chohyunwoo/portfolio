@@ -1,4 +1,4 @@
-import { educationItems } from "../data/content";
+import { certifications, educationItems } from "../data/content";
 
 export default function Education() {
   return (
@@ -34,6 +34,23 @@ export default function Education() {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">자격증</h3>
+          <div className="mt-4 flex flex-wrap gap-3">
+            {certifications.map((cert) => (
+              <span
+                key={cert.name}
+                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm dark:border-slate-800 dark:bg-slate-950 dark:text-slate-200"
+              >
+                {cert.name}
+                {cert.detail && (
+                  <span className="text-xs font-normal text-slate-400 dark:text-slate-500">{cert.detail}</span>
+                )}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

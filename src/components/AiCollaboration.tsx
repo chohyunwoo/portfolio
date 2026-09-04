@@ -1,28 +1,23 @@
 const collaborationItems = [
   {
-    title: "반복 작업 자동화 (스킬 라이브러리)",
+    title: "목적별 스킬로 반복 작업 자동화",
     description:
-      "커밋 메시지 작성, 기술 블로그 작성, UI 리뷰 등 반복 작업마다 목적별 스킬로 패키징해 적용"
-  },
-  {
-    title: "UI 디자인 리뷰 자동화",
-    description:
-      "스크린샷·URL 기반으로 UI 구조를 분석하고 개선안을 도출한 뒤, Figma MCP로 As-Is/To-Be 와이어프레임을 직접 제작하고 구현용 프롬프트까지 생성하는 ui-design-review 스킬을 구축해 실제 UI 개선 리뷰에 적용"
-  },
-  {
-    title: "문서 검색 도구 (RAG)",
-    description:
-      "설계 결정과 트러블슈팅 기록을 정리한 노션 문서를 RAG로 구축해, 과거에 어떤 근거로 어떤 결정을 내렸는지 빠르게 검색·재사용하는 개인용 도구로 실사용 중"
+      "커밋 메시지·기술 블로그·UI 리뷰를 스킬로 패키징. 그중 ui-design-review는 스크린샷 분석부터 Figma MCP 와이어프레임 제작까지 자동화"
   },
   {
     title: "실무 개발 워크플로우",
     description:
-      "이슈 작성 → 브랜치 생성 → 구현 → PR 생성까지 전 과정에 Claude Code CLI를 실사용, 설계 결정마다 대안 비교·근거를 CLAUDE.md에 남겨 AI와 같은 컨텍스트를 공유하며 협업"
+      "이슈 작성 → 브랜치 생성 → 구현 → PR 생성까지 전 과정에 Claude Code CLI를 실사용. 설계 결정마다 대안 비교와 근거를 CLAUDE.md에 남겨 AI와 같은 컨텍스트를 공유하며 협업"
+  },
+  {
+    title: "프롬프트 구조화",
+    description:
+      "반복 요청을 RGCCO 형식으로 템플릿화하고, ① 불확실한 부분은 멈춰서 질문할 것 ② 구현과 검증 로직을 함께 낼 것 ③ 확인된 것과 확인하지 못한 것을 구분해 서술할 것을 항상 포함"
   },
   {
     title: "AI 산출물은 검증 후 채택",
     description:
-      "불확실한 부분은 넘기지 않고 확인·질문하게 하고, 구현과 동시에 테스트/검증 로직을 함께 요구. 이력서에 적은 모든 수치는 EXPLAIN·k6·curl로 직접 재산출해 대조한 값입니다"
+      "구현과 동시에 테스트·검증 로직을 함께 요구하고, 이력서와 포트폴리오에 적은 모든 수치는 EXPLAIN·k6·curl로 직접 재산출해 대조"
   }
 ];
 
@@ -30,7 +25,6 @@ const collaborationTools = [
   "Claude Code CLI (headless)",
   "Claude API",
   "GitHub Actions",
-  "Slack Webhook",
   "Figma MCP"
 ];
 
