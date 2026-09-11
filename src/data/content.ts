@@ -91,5 +91,5 @@ export const educationItems: EducationItem[] = [
 
 export const certifications: Certification[] = [
   { name: "SQLD" },
-  { name: "정보처리기사", detail: "필기 합격" }
+  { name: "정보처리기사" }
 ];
